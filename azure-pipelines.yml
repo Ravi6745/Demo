@@ -1,11 +1,7 @@
 # HTML
-- task: AzureResourceManagerTemplateDeployment@3
+- task: DotNetCoreCLI@2
   inputs:
-    deploymentScope: 'Resource Group'
-    azureResourceManagerConnection: 'Free Trial(8ec7e3af-34c3-48fe-a76a-ba4098482367)'
-    action: 'Create Or Update Resource Group'
-    templateLocation: 'Linked artifact'
-    deploymentMode: 'Incremental'
+    command: 'build'
 # Archive your static HTML project and save it with the build record.
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
